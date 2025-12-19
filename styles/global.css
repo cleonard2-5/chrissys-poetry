@@ -1,6 +1,7 @@
 body {
   font-family: Nunito Sans, Calibri, sans-serif;
   padding: 13% 2% 0 2%;
+  margin-bottom: 2000px;
 
   background-image: linear-gradient(to bottom, rgba(255, 185, 234, 0.25), rgba(252, 200, 236, 0.85));
   background-color: white; 
