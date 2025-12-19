@@ -20,7 +20,7 @@ header {
   font-weight: 700;
   background-color: rgb(18, 10, 88);
 }
-.header-bottom {
+nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -30,7 +30,7 @@ header {
   font-weight: 500;
   background-color: rgb(19, 27, 139);
 }
-.header-bottom a {
+nav a {
   color: rgb(200, 194, 253);
   display: flex;
   align-items: center;
@@ -40,7 +40,7 @@ header {
   transition: background-color 0.15s, color 0.15s;
   text-decoration: none;
 }
-.header-bottom a:hover {
+nav a:hover {
   background-color: rgb(18, 10, 88);
   color:white;
 }
