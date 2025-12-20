@@ -15,7 +15,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-grow: 3;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
   background-color: rgb(18, 10, 88);
 }
@@ -25,7 +25,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   flex-grow: 2;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
   background-color: rgb(19, 27, 139);
 }
