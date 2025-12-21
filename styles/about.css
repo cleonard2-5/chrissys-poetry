@@ -1,0 +1,44 @@
+.about-title {
+  background-color: rgb(193, 153, 181);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 6px dotted rgb(179, 113, 159);
+
+}
+.about-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  height: 500px;
+  background-color: rgb(193, 153, 181);
+  color: white;
+  border-radius: 20px;
+  border: 4px dotted rgb(179, 113, 159);
+}
+.about-section {
+  display: flex;
+  justify-content: center;
+  width: 47%;
+  height: 90%;
+  text-align: center;
+  font-size: 16px;
+}
+.about-section img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border: 2px dotted rgb(179, 113, 159);
+  border-radius: 20px;
+  transition: border 0.15s;
+}
+.about-section img:hover {
+  border: 2px dotted rgb(172, 64, 230);
+}
