@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/poems.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,10 +36,30 @@
 
     <p>these (yes, THESE) are your poems</p>
 
+    <button onclick="document.getElementById('poem1').showModal()">Read Poem</button>
+
+    <dialog id="poem1">
+      <h2>Poem Title</h2>
+      <p>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br></p>
+      <button onclick="closePoem('poem1')">Close</button>
+    </dialog>
+
     <div class="page-bottom">
       website and poems all created by christopher leonard 	&#60;3
     </div>
 
+    <script>
+      function closePoem(id) {
+        const dialog = document.getElementById(id);
+        
+        dialog.classList.add('hide'); 
+        
+        setTimeout(() => {
+          dialog.close();
+          dialog.classList.remove('hide');
+        }, 500);
+      }
+    </script>
   </body>
 
 </html>
