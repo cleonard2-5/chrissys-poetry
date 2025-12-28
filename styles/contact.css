@@ -5,6 +5,14 @@
   justify-content: space-evenly;
   color: white;
   font-size: 20px;
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.about-header {
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .contact-boxset img {
   height: 20px;
