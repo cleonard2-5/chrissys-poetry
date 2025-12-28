@@ -39,22 +39,23 @@
 .about-section {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 47%;
-  height: 90%;
+  height: auto;
   text-align: center;
   font-size: 16px;
 }
 .about-section img {
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   height: auto;
-  max-height: 400px;
-  border: 2px dotted rgb(179, 113, 159);
+  max-width: 350px;
+  border: 4px dotted rgb(179, 113, 159);
   border-radius: 20px;
   transition: border 0.15s;
 }
 .about-section img:hover {
-  border: 2px dotted rgb(172, 64, 230);
+  border: 4px dotted rgb(172, 64, 230);
 }
 @media (max-width: 900px) {
   .about-body {
@@ -70,5 +71,10 @@
 
   .about-title {
     font-size: clamp(18px, 5vw, 42px);
+  }
+
+  .about-section img {
+    width: 80%;
+    max-height: none;
   }
 }
