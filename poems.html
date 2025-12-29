@@ -34,21 +34,34 @@
       
     </header>
 
-    <p>these (yes, THESE) are your poems</p>
+    <main>
 
-    <button onclick="document.getElementById('poem1').showModal()">Read Poem</button>
+      <div>
+        <button class="poem-btn" onclick="openPoem('poem1')">
+          gurt
+        </button>
+      </div>
 
-    <dialog id="poem1">
-      <h2>Poem Title</h2>
-      <p>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br></p>
-      <button onclick="closePoem('poem1')">Close</button>
-    </dialog>
+      <dialog id="poem1">
+        <div>gurt</div>
+        <h2>Poem Title</h2>
+        <p>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br></p>
+        <button onclick="closePoem('poem1')">Close</button>
+      </dialog>
 
-    <div class="page-bottom">
-      website and poems all created by christopher leonard 	&#60;3
-    </div>
+      <div class="page-bottom">
+        &#9829; website and poems all created by christopher leonard 	&#9829;
+      </div>
+      
+    </main>
 
     <script>
+      function openPoem(id) {
+        const dialog = document.getElementById(id);
+        dialog.showModal();
+        dialog.scrollTop = 0; 
+      }
+
       function closePoem(id) {
         const dialog = document.getElementById(id);
         

@@ -52,10 +52,6 @@
   max-width: 350px;
   border: 4px dotted rgb(179, 113, 159);
   border-radius: 20px;
-  transition: border 0.15s;
-}
-.about-section img:hover {
-  border: 4px dotted rgb(172, 64, 230);
 }
 @media (max-width: 900px) {
   .about-body {
