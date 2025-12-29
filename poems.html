@@ -36,23 +36,77 @@
 
     <main>
 
-      <div>
-        <button class="poem-btn" onclick="openPoem('poem1')">
-          gurt
-        </button>
+      <div class="poem-grid">
+
+        <div class="poem-container">
+          <button class="poem-button" onclick="openPoem('poem1')">
+            <h3>very long poem title very very long</h3>
+            <p>gurt</p>
+          </button>
+        </div>
+
+        <div class="poem-container">
+          <button class="poem-button" onclick="openPoem('poem2')">
+            <h3>yo</h3>
+            <p>gurt</p>
+          </button>
+        </div>
+        
+        <div class="poem-container">
+          <button class="poem-button">
+            <h3>yo</h3>
+            <p>gurt</p>
+          </button>
+        </div>
+
+        <div class="poem-container">
+          <button class="poem-button">
+            <h3>yo</h3>
+            <p>gurt</p>
+          </button>
+        </div>
+
+        <div class="poem-container">
+          <button class="poem-button">
+            <h3>yo</h3>
+            <p>gurt</p>
+          </button>
+        </div>
+
+        <div class="poem-container">
+          <button class="poem-button">
+            <h3>yo</h3>
+            <p>gurt</p>
+          </button>
+        </div>
+
       </div>
 
       <dialog id="poem1">
         <div>gurt</div>
-        <h2>Poem Title</h2>
+        <h2>Poem 1</h2>
         <p>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br></p>
         <button onclick="closePoem('poem1')">Close</button>
+      </dialog>
+
+      <dialog id="poem2">
+        <div>gurt</div>
+        <h2>Poem 2</h2>
+        <p>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br></p>
+        <button onclick="closePoem('poem2')">Close</button>
+      </dialog>
+
+      <dialog id="poem2">
+        <div>gurt</div>
+        <h2>Poem 2</h2>
+        <p>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br>Line 1<br>Line 2<br>Line 3<br>Line 4<br><br></p>
+        <button onclick="closePoem('poem2')">Close</button>
       </dialog>
 
       <div class="page-bottom">
         &#9829; website and poems all created by christopher leonard 	&#9829;
       </div>
-      
+
     </main>
 
     <script>
