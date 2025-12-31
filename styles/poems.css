@@ -39,22 +39,31 @@
   background-color: rgb(18, 10, 88);
 }
 
+.poem-window-footer {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 30px;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 4px dotted rgb(179, 113, 159);
+  background-color: rgb(18, 10, 88);
+  margin-top: 3.92px;
+}
+
 .poem-window-close, .poem-window-favorite {
   background-color: transparent;
   font-weight: 700;
   color: rgb(252, 200, 236);
   height: 100%;
-  width: 5%;
+  width: 8%;
   border: none;
 }
 
 .poem-window-close {
   padding-left: 10px;
   padding-right: 8px;
-  transition: background-color 0.15s, color 0.15s;
-}
-
-.poem-window-favorite {
   transition: background-color 0.15s, color 0.15s;
 }
 
@@ -66,6 +75,10 @@
 .poem-window-close:active {
   background-color: rgb(165, 18, 18);
   color: white;
+}
+
+.poem-window-favorite {
+  transition: background-color 0.15s, color 0.15s;
 }
 
 .poem-window-favorite:hover {
@@ -82,7 +95,28 @@
   color: rgb(252, 200, 236);
   text-align: right;
   font-style: italic;
-  width: 87%;
+  width: 80%;
+}
+
+.poem-window-footer-close {
+  background-color: transparent;
+  margin-bottom: 7px;
+  font-weight: 700;
+  color: rgb(252, 200, 236);
+  height: 80%;
+  width: 8%;
+  border-radius: 20px;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.poem-window-footer-close:hover {
+  background-color: rgb(88, 10, 10);
+  color: white;
+}
+
+.poem-window-footer-close:active {
+  background-color: rgb(165, 18, 18);
+  color: white;
 }
 
 .poem-window {
