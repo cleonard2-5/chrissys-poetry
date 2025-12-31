@@ -1,5 +1,4 @@
 .poem-grid {
-  background-color: pink;
   border-radius: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -14,11 +13,9 @@
   min-height: 150px;
   transition: transform 0.2s ease;
 }
-.poem-container:hover {
-  transform: translateY(-5px);
-}
+
 .poem-button {
-  background-color: rgb(178, 178, 237);
+  background-color: rgb(252, 200, 236);
   color: black;
   cursor: pointer;
   width: 100%;
@@ -26,6 +23,12 @@
   border: 4px dotted rgb(179, 113, 159);
   border-radius: 20px;
   text-align: center;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+.poem-button:hover {
+  background-color: rgb(179, 113, 159);
+  border-color: black;
 }
 
 .poem-window-header {
