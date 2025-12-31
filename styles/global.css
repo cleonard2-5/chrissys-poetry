@@ -1,5 +1,7 @@
-body {
+* {
   font-family: Nunito Sans, Calibri, sans-serif;
+}
+body {
   padding: 90px 2% 0 2%;
 
   background-image: linear-gradient(to bottom, rgba(255, 185, 234, 0.1), rgba(252, 200, 236, 0.8));
