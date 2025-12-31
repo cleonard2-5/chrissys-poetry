@@ -104,7 +104,6 @@
   font-weight: 700;
   color: rgb(252, 200, 236);
   height: 80%;
-  width: 12%;
   border-radius: 20px;
   transition: background-color 0.15s, color 0.15s;
 }
