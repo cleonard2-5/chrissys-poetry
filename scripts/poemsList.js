@@ -1,22 +1,6 @@
-class Poem {
-  title;
-  pubDate;
-  numeral;
-  collection;
-  content;
-  favorite;
+import { Poem } from './poemsClass.js';
 
-  constructor(poemDetails) {
-    this.title = poemDetails.title;
-    this.pubDate = poemDetails.pubDate;
-    this.name = poemDetails.name;
-    this.numeral = poemDetails.numeral;
-    this.content = poemDetails.content;
-    this.favorite = poemDetails.favorite;
-  }
-}
-
-const allPoems = [
+export const poemsList = [
   {
     title: "panopticon",
     pubDate: new Date(2026, 0, 2),
