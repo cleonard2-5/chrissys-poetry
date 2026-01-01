@@ -1,6 +1,8 @@
 import { poemsList } from './poemsList.js';
 import { dateButtonConversion, dateWindowConversion } from './utils/dates.js';
 
+console.log('work bitch!');
+
 function renderPoemsPage() {
   let poemGridHTML = '';
   let poemWindowsHTML = '';
