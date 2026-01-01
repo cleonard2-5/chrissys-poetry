@@ -15,7 +15,7 @@ export class Poem {
     this.favorite = poemDetails.favorite;
   };
 
-  gurt() {
-    return 'yo';
+  contentConversion() {
+    return this.content.replace(/\n/g, '<br>');
   }
 }
