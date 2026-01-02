@@ -1,3 +1,5 @@
+import { renderPoemsPage, needRefresh, setNeedRefresh } from "./poems.js";
+
 export class Poem {
   title;
   pubDate;
@@ -30,6 +32,12 @@ export class Poem {
       setTimeout(() => {
         dialog.close();
         dialog.classList.remove('hide');
+
+        if (needRefresh) {
+          renderPoemsPage();
+          setNeedRefresh(false);
+          console.log('refreshed');
+        }
       }, 500);
     }
   }

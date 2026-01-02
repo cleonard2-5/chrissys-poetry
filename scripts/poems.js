@@ -1,7 +1,13 @@
 import { poemsList } from './poemsList.js';
 import { dateButtonConversion, dateWindowConversion } from './utils/dates.js';
 
-function renderPoemsPage() {
+export let needRefresh = false;
+
+export function setNeedRefresh(value) {
+  needRefresh = value;
+}
+
+export function renderPoemsPage() {
   let poemGridHTML = '';
   let poemWindowsHTML = '';
   let poemFavoritesHTML = '';
@@ -65,7 +71,6 @@ function attachEventListeners() {
   document.querySelectorAll('.js-open-button').forEach(button => {
     button.addEventListener('click', () => {
       const title = button.dataset.title;
-      console.log(button.classList);
       const poem = poemsList.find(p => p.title === title);
       if (poem) poem.open();
     });
@@ -93,10 +98,10 @@ function attachEventListeners() {
       const poem = poemsList.find(p => p.title === title);
       if (poem) {
         poem.favorite = !poem.favorite;
+        needRefresh = true;
         button.classList.toggle('favorited');
         button.innerHTML = poem.favorite ? '&#9733;' : '&#9734;';
         saveFavorite();
-        renderPoemsPage();
       }
     });
   });
