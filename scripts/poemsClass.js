@@ -9,11 +9,30 @@ export class Poem {
   constructor(poemDetails) {
     this.title = poemDetails.title;
     this.pubDate = poemDetails.pubDate;
-    this.name = poemDetails.name;
+    this.collection = poemDetails.collection;
     this.numeral = poemDetails.numeral;
     this.content = poemDetails.content;
     this.favorite = poemDetails.favorite;
   };
+
+  open() {
+    const dialog = document.getElementById(this.title);
+    if (dialog) {
+      dialog.showModal();
+      dialog.scrollTop = 0;
+    }
+  }
+
+  close() {
+    const dialog = document.getElementById(this.title);
+    if (dialog) {
+      dialog.classList.add('hide');
+      setTimeout(() => {
+        dialog.close();
+        dialog.classList.remove('hide');
+      }, 500);
+    }
+  }
 
   contentConversion() {
     return this.content.replace(/\n/g, '<br>');

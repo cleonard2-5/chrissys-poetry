@@ -1,4 +1,5 @@
-.poem-grid {
+.poem-grid, .favorites-grid {
+  background-color: rgb(224, 190, 222);
   border-radius: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -7,13 +8,14 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+.favorites-grid {
+  background-color: rgb(190, 203, 224);
+}
 .poem-container {
-  background-color: rgb(193, 153, 181);
   border-radius: 20px;
   min-height: 150px;
   transition: transform 0.2s ease;
 }
-
 .poem-button {
   background-color: rgb(252, 200, 236);
   color: black;
@@ -25,9 +27,14 @@
   text-align: center;
   transition: background-color 0.15s, border-color 0.15s;
 }
-
+.storybook {
+  border-color: rgb(64, 89, 202);
+}
+.acclimate {
+  border-color: rgb(202, 105, 64);
+}
 .poem-button:hover {
-  background-color: rgb(179, 113, 159);
+  background-color: rgb(237, 132, 205);
   border-color: black;
 }
 
@@ -85,13 +92,27 @@
   transition: background-color 0.15s, color 0.15s;
 }
 
+.favorited {
+  background-color: rgb(245, 189, 5);
+  color: black;
+}
+
 .poem-window-favorite:hover {
   background-color: rgb(88, 70, 10);
   color: white;
 }
 
+.favorited:hover {
+  background-color: rgb(190, 150, 19);
+  color: black;
+}
+
 .poem-window-favorite:active {
   background-color: rgb(190, 150, 19);
+  color: black;
+}
+
+.favorited:active {
   color: white;
 }
 
