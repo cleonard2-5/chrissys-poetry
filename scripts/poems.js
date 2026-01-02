@@ -1,12 +1,6 @@
 import { poemsList } from './poemsList.js';
 import { dateButtonConversion, dateWindowConversion } from './utils/dates.js';
 
-export let needRefresh = false;
-
-export function setNeedRefresh(value) {
-  needRefresh = value;
-}
-
 export function renderPoemsPage() {
   let poemGridHTML = '';
   let poemWindowsHTML = '';
@@ -98,16 +92,14 @@ function attachEventListeners() {
       const poem = poemsList.find(p => p.title === title);
       if (poem) {
         poem.favorite = !poem.favorite;
-        needRefresh = true;
         button.classList.toggle('favorited');
         button.innerHTML = poem.favorite ? '&#9733;' : '&#9734;';
-        saveFavorite();
       }
     });
   });
 }
 
-function saveFavorite() {
+export function saveFavorite() {
   const favoriteTitles = poemsList
     .filter(poem => poem.favorite)
     .map(poem => poem.title);

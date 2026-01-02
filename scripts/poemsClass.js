@@ -1,4 +1,4 @@
-import { renderPoemsPage, needRefresh, setNeedRefresh } from "./poems.js";
+import { renderPoemsPage, saveFavorite} from "./poems.js";
 
 export class Poem {
   title;
@@ -15,11 +15,13 @@ export class Poem {
     this.numeral = poemDetails.numeral;
     this.content = poemDetails.content;
     this.favorite = poemDetails.favorite;
+    this.initialFavoriteState = this.favorite;
   };
 
   open() {
     const dialog = document.getElementById(this.title);
     if (dialog) {
+      this.initialFavoriteState = this.favorite;
       dialog.showModal();
       dialog.scrollTop = 0;
     }
@@ -33,10 +35,9 @@ export class Poem {
         dialog.close();
         dialog.classList.remove('hide');
 
-        if (needRefresh) {
+        if (this.favorite !== this.initialFavoriteState) {
+          saveFavorite();
           renderPoemsPage();
-          setNeedRefresh(false);
-          console.log('refreshed');
         }
       }, 500);
     }
