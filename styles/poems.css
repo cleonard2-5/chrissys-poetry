@@ -1,3 +1,8 @@
+main {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 900px;
+}
 .poem-grid, .favorites-grid {
   background-color: rgb(224, 190, 222);
   border-radius: 20px;
