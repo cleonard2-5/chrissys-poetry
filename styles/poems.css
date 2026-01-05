@@ -143,10 +143,18 @@
 }
 
 .poem-window-text {
-  font-size: clamp(14px, 3.5vw, 16px);
-  line-height: 1.6;
   white-space: nowrap;
-  overflow-x: auto;
+  line-height: 1.6;
+  margin: 20px 0;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .poem-window-text {
+    font-size: clamp(10px, 3.8vw, 16px);
+    overflow-x: auto;
+    padding: 0 10px;
+  }
 }
 
 .poem-window {
