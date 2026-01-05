@@ -142,6 +142,10 @@
   color: white;
 }
 
+.poem-text-title {
+  margin-bottom: 0;
+}
+
 .poem-text-container {
   overflow-x: auto;
   width: 100%;
@@ -150,7 +154,6 @@
 .poem-window-text {
   white-space: nowrap;
   line-height: 1.6;
-  margin: 20px 0;
   width: 100%;
 }
 

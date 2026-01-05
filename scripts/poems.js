@@ -34,7 +34,7 @@ export function renderPoemsPage() {
           <button class="poem-window-favorite js-favorite-button ${poem.favorite ? 'favorited' : ''}" data-title="${poem.title}">${poem.favorite ? '&#9733;' : '&#9734;'}</button>
           <div class="poem-window-date">${dateWindowConversion(poem.pubDate)}</div>
         </div>
-        <h2>${poem.title}</h2>
+        <h2 class="poem-text-title">${poem.title}</h2>
         <div class="poem-text-container">
         <p class="poem-window-text">${poem.contentConversion()}</p>
         </div>
