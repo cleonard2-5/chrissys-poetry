@@ -142,6 +142,11 @@
   color: white;
 }
 
+.poem-text-container {
+  overflow-x: auto;
+  width: 100%;
+}
+
 .poem-window-text {
   white-space: nowrap;
   line-height: 1.6;
