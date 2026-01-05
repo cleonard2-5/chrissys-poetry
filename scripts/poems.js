@@ -35,7 +35,7 @@ export function renderPoemsPage() {
           <div class="poem-window-date">${dateWindowConversion(poem.pubDate)}</div>
         </div>
         <h2>${poem.title}</h2>
-        <p>${poem.contentConversion()}</p>
+        <p class="poem-window-text">${poem.contentConversion()}</p>
 
         <div class="poem-window-footer">
           <button class="poem-window-footer-close js-close-button" data-title="${poem.title}">Close</button>

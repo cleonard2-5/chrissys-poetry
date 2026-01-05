@@ -142,6 +142,13 @@
   color: white;
 }
 
+.poem-window-text {
+  font-size: clamp(14px, 3.5vw, 16px);
+  line-height: 1.6;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
 .poem-window {
   padding: 2rem;
   min-width: 80%;
